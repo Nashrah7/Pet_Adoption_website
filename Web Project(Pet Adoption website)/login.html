@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Login - Pet Adoption Website</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <div class="paw-logo"><img src="assets/pets.png" /></div>
+            <ul class="nav-links">
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='/about.php'>About</a></li>
+                <li><a href='/contact.php'>Contact</a></li>
+                <li><a href='#'>Categories</a></li>
+                <li><a href='/shop.php'>Shop</a></li>
+            </ul>
+        </div>
+        <div class="cart">
+            <input type="text" id="search" disabled>
+            <div class="search"><img src="assets/magnifying-glass.png" alt="search"></div>
+            <a href="login.html" class="shop">Log in</a>
+        </div>
+    </nav>
+    <div class="login" id="login">
+        <div class="login-left">
+            <div class="login-left-in">
+                <h1>New User?</h1>
+                <p>Please signup using the button below!</p>
+                <div class="button" onclick="swap('signup')">Sign up</div>
+            </div>
+        </div>
+        <div class="login-right">
+            <h1>Login</h1>
+            <p>Login using the form below</p>
+            <div class="error"></div>
+            <div class="form">
+                <div class="form-field">
+                    <label for="">Username</label>
+                    <input type="text" name="user" id="user">
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-field">
+                    <div class="button" onclick="signin()">Submit</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login" id="signup">
+        <div class="login-left">
+            <div class="login-left-in">
+                <h1>Returning User?</h1>
+                <p>Please sign in using the button below!</p>
+                <div class="button" onclick="swap('signin')">Sign in</div>
+            </div>
+        </div>
+        <div class="login-right">
+            <h1>Signup</h1>
+            <p>Signup using the form below</p>
+            <div class="error"></div>
+            <div class="message"></div>
+            <div class="form">
+                <div class="form-field">
+                    <label for="">Username</label>
+                    <input type="text" name="user" id="reguser">
+                </div>
+                <div class="form-field">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-field">
+                    <label for="">Full Name</label>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
+                <div class="form-field">
+                    <label for="">Phone Number</label>
+                    <input type="text" name="phonenumber" id="phonenumber">
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="regpassword">
+                </div>
+                <div class="form-field">
+                    <div class="button" onclick="signup()">Submit</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

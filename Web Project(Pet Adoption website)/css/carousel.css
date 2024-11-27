@@ -1,0 +1,19 @@
+.carousel{
+    
+    margin: auto;
+    padding: 40px;    
+}
+
+.carousel-slider{
+    /* height: 470px !important; */
+    width: 100%;
+    display: block;
+}
+.carousel-slider img{
+    object-fit: contain;
+    height: auto;
+    width: 100%;
+    object-position: center;
+}
+
+ 

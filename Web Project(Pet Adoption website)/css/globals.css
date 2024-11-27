@@ -1,0 +1,43 @@
+:root{
+    --theme-color: #ee6e18;
+    --link-color: #1e4b57;
+    --text-color: #757b8b;
+    --highlight-color: #0a303a;   
+}
+html{
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: #f8f4ef;
+}
+a, a:visited{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a{
+    transition: color 300ms ease-in-out;
+}
+a:hover{
+    color: var(--theme-color);
+}
+h1, h2, h3, h4{
+    color: var(--highlight-color);
+}
+h1 span{
+    color: var(--theme-color);
+}
+.button {
+    background-color: var(--theme-color);
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white !important;
+    transition: border-radius 400ms ease-in-out;
+}
+.button:hover{
+    border-radius: 25px;
+    color: white !important;    
+}

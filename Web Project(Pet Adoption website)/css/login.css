@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    padding: 0 300px;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 30% 70%;
+}
+
+.login .login-left {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .login-left .login-left-in .button {
+    padding: 10px 20px;
+    background: var(--theme-color);
+color: white;;
+    margin-top: 20px;
+    cursor:pointer;
+    width: max-content;
+    margin-left: 20px;
+}
+
+.login .login-right {
+    padding: 10px;
+    border-left: 1px solid var(--theme-color);
+}
+
+.login .login-right .form {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login .login-right .form .form-field {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 20px;
+}
+
+.login .login-right .form .form-field label {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.login .login-right .form .form-field input {
+    height: 20px;
+    border: none;
+    background-color: transparent !important;
+    border-bottom: 1px solid var(--theme-color);
+}
+
+.login .login-right .form .form-field .button {
+    padding: 10px 20px;
+    background: var(--theme-color);
+color: white;;
+    cursor:pointer;
+    width: max-content;
+}
+
+.error {
+    color: crimson;
+    text-align: center;
+}
+.message {
+    color: green;
+    text-align: center;
+}
